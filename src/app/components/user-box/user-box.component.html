@@ -1,1 +1,12 @@
 <p>user-box works!</p>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of users | async">
+        {{user.name}}
+        <span class="badge badge-primary">{{user.room}}</span>
+        <br>
+        <span class="badge badge-primary">{{user.id}}</span>
+    </li>
+</ul>
+
+<!-- {{users | async}} -->

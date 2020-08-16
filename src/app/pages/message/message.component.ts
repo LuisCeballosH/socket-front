@@ -19,4 +19,8 @@ export class MessageComponent implements OnInit {
     });
   }
 
+  onClick() {
+    this.webSocketService.logout();
+  }
+
 }
